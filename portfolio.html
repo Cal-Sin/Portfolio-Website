@@ -5,17 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -24,10 +36,16 @@
         <p>Explore Batman's impressive portfolio, showcasing his experience, skills, and iconic photo</p>
 
         <nav>
-            <ul>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#fightingSkills">Skills</a></li>
-                <li><a href="#photo">Photo</a></li>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fightingSkills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#photos">Photos</a>
+                </li>
             </ul>
         </nav>
 
@@ -56,7 +74,7 @@
                         unde voluptatem, libero maiores.</td>
                 </tr>
                 <tr>
-                    <td>Penguin</td>
+                    <td>Two-Face</td>
                     <td>Fists</td>
                     <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus,
                         quisquam.
@@ -65,19 +83,41 @@
             </table>
 
             <section id="fightingSkills">
-                <h3>Skills</h3>
+                <h3>Fighting Skills</h3>
                 <p>Batman has mastered over 127 forms of martial arts including muay thai, krav maga, taekwondo and many
                     many more!</p>
             </section>
 
-            <section id="photo">
-                <h3>Photo</h3>
-                <img src="Batmanphoto.jpeg" alt="Batman Photo" width="300">
+            <section id="photos" class="container my-5">
+                <h3 class="text-center mb-4">Photos</h3>
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-4 text-center">
+                        <h5>Batman</h5>
+                        <div class="bg-success p-3">
+                            <img src="Batmanphoto.jpeg" class="img-fluid rounded" alt="Batman Photo">
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 text-center">
+                        <h5>Villains</h5>
+                        <div class="bg-danger p-3">
+                            <img src="BatmanVilliansPhoto.jpg" class="img-fluid rounded" alt="Batman Villians Photo">
+                        </div>
+                    </div>
+
+                </div>
             </section>
     </main>
 
     <footer>
-        <p>&copy; Batman. All rights reserved.</p>
+        <div class="footer row">
+            <div class="col-12 bg-dark text-white text-center p-3">
+                <p>&copy; Batman. All rights reserved.</p>
+            </div>
+        </div>
+
     </footer>
 
 </body>
