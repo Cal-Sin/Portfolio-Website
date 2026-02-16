@@ -63,3 +63,21 @@ nav.navbar .nav-link.active {
 nav.navbar {
     padding: 0.5rem 1rem;
 }
+
+/* Footer fixes */
+footer {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+footer .footer {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+footer .col-12 {
+    width: 100%;
+    margin: 0;
+    padding: 1rem !important;
+}
