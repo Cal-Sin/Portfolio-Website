@@ -1,0 +1,64 @@
+h1{
+    color: yellow !important;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    padding: 20px; 
+}
+
+main p{
+    color: black !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border: navy solid 2px;
+    padding: 10px; 
+}
+
+h2{
+    color: yellow !important;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    background-color: navy;
+    padding: 10px; 
+}
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    background-color: black;
+}
+
+.nav-link {
+    color: yellow !important;
+    font-weight: bold;
+    margin-right: 15px;
+    text-decoration: underline;
+    text-decoration-color: navy;
+}
+
+nav.navbar.navbar-home,
+nav.navbar.navbar-about,
+nav.navbar.navbar-portfolio {
+    background-color:  #2c3e50; 
+}
+
+nav.navbar.navbar-home .nav-link,
+nav.navbar.navbar-about .nav-link,
+nav.navbar.navbar-portfolio .nav-link {
+    color: rgba(255,255,255,0.95);
+}
+nav.navbar .nav-link:hover {
+    color: #ffd700; 
+}
+nav.navbar .nav-link.active {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+nav.navbar {
+    padding: 0.5rem 1rem;
+}
